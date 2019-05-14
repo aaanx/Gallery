@@ -1,0 +1,43 @@
+<html lang="eng">
+	<head>
+		<meta charset="UTF-8">
+		<title>Photo Gallery</title>
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<link href="https://fonts.googleapis.com/css?family=Allura|Montserrat:400,400i" rel="stylesheet"> 
+	</head>
+	<body>
+		<main class="page_wrapper">
+
+			<h1 class="page_title">Photo Gallery</h1>
+
+			<nav class="nav_bar">
+				<button class="nav_bar_btn" onclick="filterImages('all')">show all</button>
+				<button class="nav_bar_btn" onclick="filterImages('unsplash')">unsplash</button>
+				<button class="nav_bar_btn" onclick="filterImages('littlevisuals')">littlevisuals</button>
+				<button class="nav_bar_btn" onclick="filterImages('travelcoffeebook')">travelcoffeebook</button>
+				<button class="nav_bar_btn" onclick="filterImages('jaymantri')">jaymantri</button>
+			</nav>
+
+			<div class="gallery_container"></div>
+
+			<div class="loader_container">
+				<img class="page_loader" src="svg/loader.svg" alt="Page loading">
+			</div>
+
+			<div class="zoom_container">
+				<span class="close_btn">&times;</span>				
+				<img class="zoom_img" src="#"/>
+			</div>
+			
+			<div class="btn_section">
+				<button class="showmore_btn" onclick="displayMoreImages();showBtnLoader()">
+					Show more
+				</button>
+			</div>
+
+		</main>
+
+		<script type="text/javascript" src="imgserv.js"></script>
+		<script type="text/javascript" src="script.js"></script>
+	</body>
+</html>
