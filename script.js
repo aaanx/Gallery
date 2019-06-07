@@ -3,7 +3,7 @@ const imgService = new ImageService();
 ////////// Load images data, display ten first images and page loader
 document.addEventListener('DOMContentLoaded', function() {
       req=new XMLHttpRequest();
-      req.open("GET",'https://www.splashbase.co/api/v1/images/search?query=tree',true);
+      req.open("GET",'http://www.splashbase.co/api/v1/images/search?query=tree?',true);
       req.send();
       req.onload=function(){
         json=JSON.parse(req.responseText);
